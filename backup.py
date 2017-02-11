@@ -5,7 +5,7 @@ import datetime
 import os
 import boto3
 
-if len(sys.argv) != 3:
+if len(sys.argv) != 4:
   quit()
 
 source_path = str(sys.argv[1])
