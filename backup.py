@@ -5,6 +5,8 @@ import datetime
 import os
 import boto3
 
+#Usage ./backup.py <path> <bucket-name> <db-name>
+
 if len(sys.argv) != 4:
   quit()
 
