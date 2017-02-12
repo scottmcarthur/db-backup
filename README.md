@@ -8,4 +8,4 @@
 
 ##Crontab
 
-    0 */6 * * * /usr/bin/mysqldump -u <username> -p<password> <database> | gzip > /root/db-backup/db.sql.gz; /root/db-backup/backup.py /root/db-backup/db.sql.gz <bucket> <database> <aws-id> <aws-key> >/dev/null 2>&1
+    0 */6 * * * /usr/bin/mysqldump -u <username> -p<password> <database> | /bin/gzip > /root/db-backup/db.sql.gz; /root/db-backup/backup.py /root/db-backup/db.sql.gz <bucket> <database> <aws-id> <aws-key> >/dev/null 2>&1
