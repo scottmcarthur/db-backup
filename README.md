@@ -2,6 +2,7 @@
 
     apt-get install python python-pip
     pip install boto3
+    pip install --upgrade pip
     mkdir -p ~/db-backup && cd "$_"
     wget -O backup.py https://raw.githubusercontent.com/scottmcarthur/db-backup/master/backup.py
     chmod +x ./backup.py
